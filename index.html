@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no, viewport-fit=cover" >
+    <meta name="description" content="this is an introduction on python tutorial.">
+    <meta name="keywords" content="python, difference between pyton and c++, importance of python,python editors,">
+    <meta name="author" content="Asiedu">
+    <link rel="icon" href="media/common/elderly1.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="grannycode.js"></script>
+    <script src="granny.js"></script>
+    <link rel="stylesheet" type="text/css" href="granny.css">
+    <script src="index.js"></script>
+
+    <title>home</title>
+
+</head>
+
+<body>
+
+    <home class="home">
+        <section id="infoboard">
+            <p></p>
+            <div class="mobilesearchbox" >
+                <input type="text" name="search" placeholder="Search here....." id="mobilesearchbox">
+            </div>
+        </section>
+
+        <header class="header" id="header">
+
+            <!-----------------------------------menu-->
+            <div class="menubars" id="menubars">
+                <button>☰</button>
+            </div>
+
+
+            <div class="namelogo" id="namelogo">
+                <img src="media/common/elderly.png" width="50px" height="100%">
+                <p>grannyCode</p>
+            </div>
+
+
+            <div class="menu">
+                <ul class="pamainmen">
+                  <li class="mainmenu"><a href="index.html">Home&nbsp;<i style="color:#1DA1F2" class="fa fa-home"></i></a></li>
+    
+                  <li class="mainmenu" onclick="menufun('programming')"><a href="#">Programming <more>&#x25be;</more></a>
+                    <ul class="programming">
+                       <li class="submenu"><a href="programming/python/starting.html">Python</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="mainmenu" onclick="menufun('classroom')"><a href="#">Classroom <more>&#x25be;</more></a>
+                        <ul class="classroom" >
+                            <li class="submenu"><a href="#">Mathematics</a></li>
+                            <li class="submenu"><a href="#">Sciences</a></li>
+                            <li class="submenu"><a href="#">Languages</a></li>
+                        </ul>
+                
+                  </li>
+                  <li class="mainmenu" onclick="menufun('recipes')"><a href="#">Recipes <more>&#x25be;</more></a></li>
+
+                  <li class="mainmenu" onclick="menufun('blog')"><a href="#">Blog <more>&#x25be;</more></a>
+                    <ul class="blog" >
+                        <li class="submenu"><a href="#">Articles</a></li>
+                        <li class="submenu"><a href="#">News</a></li>
+                        <li class="submenu"><a href="#">Gallery</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="mainmenu" onclick="menufun('fundraising')"><a href="#">Fundraising<more>&#x25be;</more></a></li>
+                </ul> 
+            </div> 
+
+
+            <div class="search" id="search">
+                <button><i class="fas fa-search"></i></button>
+                <button><i class="fas fa-close"></i></button>
+            </div>
+
+            <div class="searchbox">
+                <input type="text" name="search" placeholder="Search here....." id="searchbox">
+            </div>
+
+
+            <div class="lightmode" id="lightmode">
+                <button><i class="fas fa-sun"></i></button>
+            </div>
+
+            <div class="donate" id="donate">
+                <button>Donate<b style="color:tomato">&#10084;</b></button>
+            </div>
+        </header>
+
+        <!-------------------------------------------------------------------------------------------------------->
+        <section class="panel" id="panel">
+            <div class="panelmenu">
+              <ul>
+                <li><a href="index.html">Home&nbsp;<i style="color:#1DA1F2" class="fa fa-home"></i></a></li>
+
+                <li onclick="menufun('programming')"><a href="#">Programming <more>&#x25be;</more></a>
+                    <ul class="programming">
+                       <li class="submenu"><a href="programming/python/starting.html">Python</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="menufun('classroom')"><a href="#">Classroom <more>&#x25be;</more></a>
+                    <ul class="classroom" >
+                        <li class="submenu"><a href="#">Mathematics</a></li>
+                        <li class="submenu"><a href="#">Sciences</a></li>
+                        <li class="submenu"><a href="#">Languages</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="menufun('recipes')"><a href="#">Recipes <more>&#x25be;</more></a></li>
+
+                <li onclick="menufun('blog')"><a href="#">Blog <more>&#x25be;</more></a>
+                    <ul class="blog" >
+                        <li class="submenu"><a href="#">Articles</a></li>
+                        <li class="submenu"><a href="#">News</a></li>
+                        <li class="submenu"><a href="#">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="menufun('foundations')"><a href="#">Foundations <more>&#x25be;</more></a></li>
+              </ul>
+            </div> 
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------------->
+        <nav class="nav maincontent" id="nav">
+            <ul type="none">
+                <li><a href="#">Python OS</a></li>
+                <li><a href="#">Variables</a></li>
+            </ul>
+        </nav>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <article class="main maincontent" id="main">
+            
+            <div class="greetings">
+                <p>Hello,<br>
+                welcome to <b style="color: green; font-size: 40px;">grannyCode</b></p>
+            </div>
+            <p class="headline">Choose a course from our numerous tutorials and start learning today... Granny got what you love....</p>
+
+            <div class="homesearch">
+                <input type="text" placeholder="what do you want to learn, read or practice today..." id="homesearchbox">
+                <button id="homesearchbut" onmousedown="(function(){$('#homesearchbut').css('box-shadow','#AAAAAA 5px 5px 30px')}())"  onmouseup="(function(){$('#homesearchbut').css('box-shadow','none')}())">search</button>
+            </div>
+
+            <div id="searchpanel">
+                <div class="searchpanelheader">
+                    <p style="color:tomato">Results</p>
+                    <i style="color:#00334c" class="fas fa-times" id="searchpanelclose"></i>
+                </div>
+                <hr class="#EEEEEE"><br>
+                <ul id="searchpanellist"></ul>
+            </div>
+
+
+            <span class="lab" id="lab" aria-label="programming">
+            <p class="introsub" id="programmingcourse" style="cursor: pointer; user-select: none;"><i class="fas fa-code" style="color:tomato;font-size: 25px;" ></i>&nbsp;&nbsp;&nbsp;Programming Courses</p><br></span>
+            <div class="programmingcourse">
+
+            <div class="labels" id="prolab1cos1"> 
+              <p class="cont" id="prolab1"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Python</b><br>
+              a very simple and well understandable tutorials on core python with great and exciting practical view.
+              </p>
+            </div>
+
+            <div class="labels" id="prolab2">
+              <p class="cont"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">C++</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="prolab3">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Dart</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            <div class="labels" id="prolab4">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Flutter</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+            </div><br>
+
+            <!--###############################################################################--->
+
+
+            <span class="lab" id="lab" aria-label="classroom">
+            <p class="introsub"><i class="fas fa-graduation-cap" style="color:cornflowerblue;font-size: 25px; cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;Classroom Courses</p><br></span>
+            <div>
+
+            <div class="labels">
+              <p class="cont" id="classlab1"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Python</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="classlab2">
+              <p class="cont"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">C++</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="classlab3">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Dart</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            <div class="labels" id="classlab4">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Flutter</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            </div><br><br><br>
+
+
+            <!--###############################################################################--->
+
+            <span class="lab" id="lab" aria-label="recipes">
+            <p class="introsub"><i class="fas fa-coffee" style="color:maroon;font-size: 25px; cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;Recipes</p><br></span>
+            <div>
+
+            <div class="labels">
+              <p class="cont" id="reclab1" onclick="(function(){document.location.href='recipes/yogurt.html'})()"> 
+              <i class="fas fa-ice-cream" style="color: tomato;"></i>&nbsp;&nbsp;<b class="cred">Yogurt</b><br>
+              an incredible homemade yogurt with a very simple procedure
+              </p>
+            </div>
+
+            <div class="labels" id="reclab2">
+              <p class="cont"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">C++</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="reclab3">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Dart</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            <div class="labels" id="reclab4">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Flutter</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            </div><br><br><br>
+
+
+              <!--###############################################################################--->
+
+            <span class="lab" id="lab" aria-label="do it yourself"> 
+            <p class="introsub"><i class="fas fa-cut fa-wrench" style="color:royalblue;font-size: 25px; cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;Do It Yourself</p><br></span>
+            <div class="programmingcourse">
+
+            <div class="labels">
+              <p class="cont" id="diylab1"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Python</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="diylab2">
+              <p class="cont"> 
+              <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">C++</b><br>
+              a very simple and well understandable tutorials on core python with great demonstrtions.
+              </p>
+            </div>
+
+            <div class="labels" id="diylab3">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Dart</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            <div class="labels" id="diylab4">
+                <p class="cont"> 
+                <i class="fab fa-python" style="color: #82b741;"></i>&nbsp;&nbsp;<b class="cred">Flutter</b><br>
+                a very simple and well understandable tutorials on core python with great demonstrtions.
+                </p>
+            </div>
+
+            </div><br><br><br>
+
+
+            <!--###############################################################################--->
+
+            <span class="lab" id="lab" aria-label="articles">
+            <p class="introsub"><i class="fas fa-book" style="color:darkcyan;font-size: 25px;"></i>&nbsp;&nbsp;&nbsp;Articles</p><br></span>
+            
+
+            <div class="articleplate" id="article1000">
+             <arttitle>10 final year computer science projects to win your supervisor's heart</arttitle> <br>  
+             <p class="cont">
+               There are several ways to achieve dreams in life. But the surest way is consistency...<wd class="cgreen">Read more</wd>
+             </p>
+            </div><br>
+
+             <div class="articleplate" id="article1100">
+             <arttitle>10 proof ways to achieve your dreams</arttitle> <br>  
+             <p class="cont">
+               There are several ways to achieve dreams in life. But the surest way is consistency...<wd class="cgreen">Read more</wd>
+             </p>
+            </div><br>
+
+             <div class="articleplate" id="article1200">
+             <arttitle>10 proof ways to achieve your dreams</arttitle> <br>  
+             <p class="cont">
+               There are several ways to achieve dreams in life. But the surest way is consistency...<wd class="cgreen">Read more</wd>
+             </p>
+            </div>
+            <br><br><br>
+
+
+
+        </article>
+    
+        <!----------------------------------------------------------------------------------------------------->
+
+        <aside class="sidebar maincontent" id="sidebar">
+            <div class="content" id="content">
+            <div class="contheading">The Content</div>
+            <ul type="none">
+                <li class="contentlist">Programming &nbsp;&nbsp;</li>
+                <li class="contentlist">Classroom &nbsp;&nbsp;</li>
+                <li class="contentlist">Recipes&nbsp; &nbsp;</li>
+                <li class="contentlist">Do It Yourself&nbsp; &nbsp;</li>
+                <li class="contentlist">Articles&nbsp; &nbsp;</li>
+            </ul>
+           </div>
+
+        </aside>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <section class="relarticles" id="relarticles">
+            <p class="intro">Related Articles</p>
+            <p><a href="aboutus.html">About Us</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------->
+ 
+        <section class="navigators" id="navigators">
+            <div id="previous">
+                <input type="button"  name="previous" value="&larr; previous">
+            </div>
+            <div id="upnext">
+                <input type="button"  name="up" value="up &uarr;" id="up">
+                <input type="button"  name="next" value="next &rarr;" id="next" onclick="(function(){document.location.href='aboutus.html'})()">
+            </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------->
+ 
+        <section class="comment" id="comment">
+ 
+            <div>
+                <i style="color:#00334c">
+                 Please leave a comment in the comment box below and add your email to subscribe to our newsletter,
+                 new products and services and free tutorials. Show love by donating. Have a blessed day
+                 </i> &#9997;&#128525;&#128515;......
+            </div>
+               
+            <div id="commentform">
+                <textarea id="commentbox" placeholder="Please type email and comment here ..."></textarea>
+                <button id="commentbut" onmousedown="(function(){$('#commentbut').css('background-color','#00334c')}())"  onmouseup="(function(){$('#commentbut').css('background-color','#1DA1F2')}())"> submit </button>
+            </div>
+ 
+        </section>
+
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <footer class="footer" id="footer">
+            <div class="applinks">
+               <div id="appname">
+                  <img src="media/common/elderly1.png" height="25px" height="25px">
+                  grannyCode &nbsp;&nbsp;&nbsp;<copyright>&copy;2023</copyright>
+               </div>
+ 
+               <div id="brandname"><small style="color:#AAAAAA">powered by</small> Ouereila</div>
+
+                 <div class="socialmedia">
+                 <a href="https://t.me/ouereila"><i class="fab fa-telegram" ></i></a>
+                 <a href="https://www.facebook.com/profile.php?id=100092506561456"><i class="fab fa-facebook" ></i></a>
+                 <a href="https://www.github.com/ASIEDUW/Ouereila.git"><i class="fab fa-github" ></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.twitter.com/@AsieduWill89107"><i class="fab fa-twitter" ></i></a>
+                 <a href="https://wa.me/+233550640290"><i class="fab fa-whatsapp"></i></a>
+                 <a href="https://www.youtube.com/@grannyCode"><i class="fab fa-youtube" ></i></a>
+                </div>
+                <div id="email"><a href="mailto:ouereila@gmail.com"><i class="fas fa-envelope" style="color:#1DA1F2;"></i>&nbsp;&nbsp;&nbsp;ouereila@gmail.com</a></div>
+
+            </div>
+
+ 
+            <div class="apparticles">
+
+               <ul class="siteinfo">
+               <p style="color:#AAAAAA;font-size: 16px;">What we are</p>
+               <li><a href="aboutus.html">About Us</a></li>
+               <li><a href="contactus.html">Contact Us</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Products/Services</a></li>
+               <li><a href="#">Support</a></li>
+               <li><a onclick="ecommerse()">Our E-commerse</a></li>
+               <li><a href="fundraising.html">Fundraising</a></li>
+               <li><a href="#">Trending</a></li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">E-Books</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="programming/programming.html">Tutorials</a></li>
+               </ul>
+ 
+               <ul class="languages">
+               <p style="color:#AAAAAA;font-size: 16px;">Computer languages</p>
+               <li><a href="/programming/python/starting.html">Python</a></li>
+               </ul>
+
+            </div>
+ 
+           ---------------------------------------------------------------------------
+ 
+        </footer>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+    </home>
+</body>
+</html>
